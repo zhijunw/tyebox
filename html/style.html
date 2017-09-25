@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>仿TryBox</title>
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
+		<div class="topNav" id="top">
+			<div class="wrap clearfix">
+				<div class="l">
+				</div>
+				<div class="r">
+					<div class="register">
+						<a href="">登录</a> |
+						<a href="">注册</a>
+					</div>
+					<ul class="Nav clearfix">
+						<li>
+							<a href="">首页</a>
+						</li>
+						<li>
+							<a href="">服务流程</a>
+						</li>
+						<li>
+							<a href="">专属造型顾问</a>
+						</li>
+						<li>
+							<a href="">男装品牌</a>
+						</li>
+						<li>
+							<a href="">关于价格</a>
+						</li>
+						<li>
+							<a href="">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="clothesStyle">
+			<div class="progressBar">
+				<span>8%</span>
+			</div>
+			<div class="wrap">
+				<h5><a href="">专属造型顾问</a><a href=""><span>/选择平日穿衣风格</span></a></h5>
+				<ul class="clearfix ">
+					<h3>您平时偏好那种穿衣风格？</h3>
+					<li>
+						<a href="dressingStyle.html">
+							<div class="background">
+							</div>
+							<img src="../img/woman1.png">
+						</a>
+						<p>经典商务</p>
+					</li>
+					<li>
+						<a href="dressingStyle.html">
+							<div class="background">
+							</div>
+							<img src="../img/woman2.png">
+						</a>
+						<p>商务休闲</p>
+					</li>
+					<li>
+						<a href="dressingStyle.html">
+							<div class="background">
+							</div>
+							<img src="../img/woman3.png">
+						</a>
+						<p>休闲娱乐</p>
+					</li>
+					<li>
+						<a href="dressingStyle.html">
+							<div class="background">
+							</div>
+							<img src="../img/woman4.png">
+						</a>
+						<p>运动竞技</p>
+					</li>
+				</ul>
+			</div>
+			<div class="return">
+				<a href="modelingConsultant.html"></a>
+				<p>返回</p>
+			</div>
+		</div>
+		<div class="friendlink">
+			<div class="wrap clearfix">
+				<div class="l"></div>
+				<div class="r">
+					<h5>TryBox</h5>
+					<p>
+						<a href="">关于我们</a> |
+						<a href="">常见问题</a> |
+						<a href="">隐私条款及版权声明</a>
+					</p>
+					<p class="siteinfoLegal">Copyright 2014  BICG Fashion Group. All Rights Reserved. 上海ICP备13056226号</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("ul li").hover(function(){
+			var index=$(this).index();
+			$(".background").eq(index-1).show().parents().siblings().find(".background").hide();
+		});
+	});
+	</script>
+</html>

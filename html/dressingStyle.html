@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>仿TryBox</title>
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
+		<div class="topNav" id="top">
+			<div class="wrap clearfix">
+				<div class="l">
+				</div>
+				<div class="r">
+					<div class="register">
+						<a href="signIn.html">登录</a> |
+						<a href="signIn.html">注册</a>
+					</div>
+					<ul class="Nav clearfix">
+						<li>
+							<a href="../index.html">首页</a>
+						</li>
+						<li>
+							<a href="modelingConsultant.html">服务流程</a>
+						</li>
+						<li>
+							<a href="modelingConsultant.html">专属造型顾问</a>
+						</li>
+						<li>
+							<a href="legalDeclaration.html">关于价格</a>
+						</li>
+						<li>
+							<a href="aboutTrybox.html">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="clothesStyle">
+			<div class="progressBar">
+				<span class="progress1">16%</span>
+			</div>
+			<div class="wrap">
+				<h5><a href="">专属造型顾问</a><a href=""><span>/选择工作穿衣风格</span></a></h5>
+				<ul class="clearfix ">
+					<h3>您工作时偏好那种穿衣风格？</h3>
+					<li>
+						<a href="color.html">
+							<div class="background backLight">
+							</div>
+							<img src="../img/woman1.png">
+						</a>
+						<p>随性</p>
+					</li>
+					<li>
+						<a href="color.html">
+							<div class="background backLight">
+							</div>
+							<img src="../img/woman2.png">
+						</a>
+						<p>休闲时尚</p>
+					</li>
+					<li>
+						<a href="color.html">
+							<div class="background backLight">
+							</div>
+							<img src="../img/woman3.png">
+						</a>
+						<p>正式</p>
+					</li>
+					<li>
+						<a href="color.html">
+							<div class="background backLight">
+							</div>
+							<img src="../img/woman4.png">
+						</a>
+						<p>工作服</p>
+					</li>
+				</ul>
+			</div>
+			<div class="return">
+				<a href="style.html"></a>
+				<p>返回</p>
+			</div>
+		</div>
+		<div class="friendlink">
+			<div class="wrap clearfix">
+				<div class="l"></div>
+				<div class="r">
+					<h5>TryBox</h5>
+					<p>
+						<a href="">关于我们</a> |
+						<a href="">常见问题</a> |
+						<a href="">隐私条款及版权声明</a>
+					</p>
+					<p class="siteinfoLegal">Copyright 2014  BICG Fashion Group. All Rights Reserved. 上海ICP备13056226号</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("ul li").hover(function(){
+			var index=$(this).index();
+			$(".background").eq(index-1).show().parents().siblings().find(".background").hide();
+		});
+	});
+	</script>
+</html>

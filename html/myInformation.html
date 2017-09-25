@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>仿TryBox</title>
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
+		<div class="topNav" id="top">
+			<div class="wrap clearfix">
+				<div class="l">
+				</div>
+				<div class="r">
+					<p class="account">欢迎您：alexanderson&nbsp <a>我的账户<em></em></a></p>
+					<ul class="Nav clearfix">
+						<li>
+							<a href="../index.html">首页</a>
+						</li>
+						<li>
+							<a href="modelingConsultant.html">服务流程</a>
+						</li>
+						<li>
+							<a href="modelingConsultant.html">专属造型顾问</a>
+						</li>
+						<li>
+							<a href="legalDeclaration.html">关于价格</a>
+						</li>
+						<li>
+							<a href="aboutTrybox.html">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="registerPage  myInformation">
+			<div class="wrap">
+				<h5><a href="">专属造型顾问</a><a href=""><span>/个人信息录入</span></a></h5>
+				<div class="clearfix my">
+					<ul class="nav">
+						<li  class="active"><a href="myInformation.html">我的个人资料</a><em></em></li>
+						<li><a href="orderManagement.html">订单管理</a><em></em></li>
+						<li><a href="myQuestionnaire.html">我的问卷</a><em></em></li>
+						<li><a href="myPayment.html">我的支付</a><em></em></li>
+					</ul>
+					<form class="receiving information">
+						<h5>我的个人资料</h5>
+						<div class="myPic clearfix">
+							<p>头像</p>
+							<div class="clearfix picChoice">
+								<img src="../img/myPic.png">
+								<div class="choice">
+									<button>选择照片</button><br/>
+									<button>确认上传</button>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix input">
+							<p> 姓 名</p>
+							<input type="text"  placeholder="Alexanderson"/>
+						</div>
+						<div class="clearfix gender input">
+							<p> 性 别</p>
+							<div>
+								<label>
+									<input type="radio" name="gender"                                                        val="boy" checked="checked"/> <span>先生</span>
+								</label>
+								<label>
+									 <input type="radio" name="gender" val="gilr"/> <span>女士</span>
+							    </label>
+							</div>
+						</div>
+						<div class="clearfix">
+							<p>出生日期</p>
+							<ul class="birthday">
+								<li class="year">
+									<span>2014</span><em></em>
+								</li>
+								<li> 年</li>
+								<li class="month">
+									<span>09</span><em></em>
+								</li>
+								<li> 月</li>
+								<li class="day">
+									<span>24</span><em></em>
+								</li>
+								<li> 日</li>
+							</ul>
+						</div>
+						<div class="clearfix input">
+							<p>电子邮箱</p>
+							<input type="text"  placeholder="alexanderson@mail.com"/>
+						</div>
+						<div class="clearfix input">
+							<p>手机号码</p>
+							<input type="text"  placeholder="150 0000 0000"/>
+						</div>
+						<div class="clearfix">
+							<p>收货地址</p>
+	                        <ul class="address clearfix">
+								<li class="city">
+									<span>上海市</span><em></em>
+								</li>
+								<li class="area">	
+									<span>徐汇区</span><em></em>
+								</li>
+							</ul>
+						</div>
+						<div class="clearfix input">
+							<p>&nbsp;</p>
+							<input type="text"  placeholder="嘉善路508号尚街LOFT 一号楼720 室 "/>
+						</div>
+						<div class="clearfix input">
+							<p>邮编</p>
+							<input type="text"  placeholder="2000030"/>
+						</div>
+	                     <div class="clear confirm">
+	                     	<p>&nbsp;</p>
+							<button type="button">确认<em></em></button>
+						</div>
+			    	</form>
+			    </div>
+			</div>
+		</div>
+		<div class="friendlink">
+			<div class="wrap clearfix">
+				<div class="l"></div>
+				<div class="r">
+					<h5>TryBox</h5>
+					<p>
+						<a href="">关于我们</a> |
+						<a href="">常见问题</a> |
+						<a href="">隐私条款及版权声明</a>
+					</p>
+					<p class="siteinfoLegal">Copyright 2014  BICG Fashion Group. All Rights Reserved. 上海ICP备13056226号</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".confirm button").click(function(){
+			window.location.href="orderManagement.html";
+		});
+		$(".my .nav li").hover(function(){
+			$(this).addClass("active").siblings().removeClass("active");
+		});
+		// 重排了
+        // $(".my .nav li").hover(function(){
+        // 	$(this).addClass("active").append("<em></em>").siblings().removeClass("active").find("em").remove();
+        // },function(){
+        // 	console.log(1);
+        // 	$(this).find("em").remove("");
+        // });
+	});
+	</script>
+</html>

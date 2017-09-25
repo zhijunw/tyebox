@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>仿TryBox</title>
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
+		<div class="topNav" id="top">
+			<div class="wrap clearfix">
+				<div class="l">
+				</div>
+				<div class="r">
+					<p class="account">欢迎您：alexanderson&nbsp <a>我的账户<em></em></a></p>
+					<ul class="Nav clearfix">
+					<li>
+							<a href="../index.html">首页</a>
+						</li>
+						<li>
+							<a href="modelingConsultant.html">服务流程</a>
+						</li>
+						<li>
+							<a href="modelingConsultant.html">专属造型顾问</a>
+						</li>
+						<li>
+							<a href="legalDeclaration.html">关于价格</a>
+						</li>
+						<li>
+							<a href="aboutTrybox.html">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="registerPage  selectPrice">
+			<div class="progressBar">
+				<span class="progress11">88%</span>
+			</div>
+			<div class="wrap">
+				<h5><a href="">专属造型顾问</a><a href=""><span>/选择金额</span></a></h5>
+				<div class="clearfix registrationForm">
+					<div class="explain">
+						<h6>请选择本次TryBox的金额</h6>
+						<p>请认真选择本次金额，确保您的TryBox顺利到达</p>
+					</div>
+                    <ul class="clearfix code">
+                    	<li>
+                    		<div class="clearfix content weiXin">
+                    			<div class="text ">
+		                    		<h6>微信账号：</h6>
+		                    		<p>适盒TryBox</p>
+	                    		</div>
+                                <img src="../img/weiXin.png">
+                    		</div>
+                    	</li>
+                    	<li>
+                    		<div  class="content tell">
+	                    		<h6>电话号码</h6>
+	                    		<span>400-807-0370</span>
+	                    		<p>邮箱：trybox@mail.com</p>
+                    		</div>
+                    	</li>
+                    </ul>
+				</div>
+				<div class="personalInformation price">
+					<h6><i></i>运动竞技<i></i></h6>
+					<div class="clearfix">
+                        <div class="pic">
+							<img src="../img/selectPrice.png">
+						</div>
+                        <div class="text">
+                        	<div class="clearfix txt">
+                        		<p class="fl">价格：</p>
+                        		<ul class="fr">
+                        			<li><span>2,500</span><em></em></li>
+                        			<li>1,500<i></i></li>
+                        		</ul>
+                        	</div>
+                        	<div class="clearfix">
+                        		<p class="fl"><input type="radio" checked="checked"/><span>使用优惠劵：</span></p>
+                        		<p class="fr"><input type="text" placeholder="请输入优惠券串码"/><button>确 认</button></p>
+                        	</div>
+                        </div>
+					</div>
+					<div class="formBox formBox5">
+						<button>确认，去付款<em></em></button>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="friendlink">
+			<div class="wrap clearfix">
+				<div class="l"></div>
+				<div class="r">
+					<h5>TryBox</h5>
+					<p>
+						<a href="">关于我们</a> |
+						<a href="">常见问题</a> |
+						<a href="">隐私条款及版权声明</a>
+					</p>
+					<p class="siteinfoLegal">Copyright 2014  BICG Fashion Group. All Rights Reserved. 上海ICP备13056226号</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".formBox button").click(function(){
+			window.location.href="paymentSuccess.html";
+		});
+		$(".text li").click(function(){
+			var text = $(this).text();
+			var findText = $(".text li span").text();
+			$(".text li span").text(text);
+			$(this).text(findText);
+		})
+	});
+	</script>
+</html>

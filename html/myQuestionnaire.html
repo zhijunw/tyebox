@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>仿TryBox</title>
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
+		<div class="topNav" id="top">
+			<div class="wrap clearfix">
+				<div class="l">
+				</div>
+				<div class="r">
+					<p class="account">欢迎您：alexanderson&nbsp <a>我的账户<em></em></a></p>
+					<ul class="Nav clearfix">
+						<li>
+							<a href="../index.html">首页</a>
+						</li>
+						<li>
+							<a href="modelingConsultant.html">服务流程</a>
+						</li>
+						<li>
+							<a href="modelingConsultant.html">专属造型顾问</a>
+						</li>
+						<li>
+							<a href="legalDeclaration.html">关于价格</a>
+						</li>
+						<li>
+							<a href="aboutTrybox.html">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="registerPage myInformation orderManagement">
+			<div class="wrap">
+				<h5><a href="">我的账户</a><a href=""><span>/我的个人资料/我的问卷</span></a></h5>
+				<div class="clearfix my">
+					<ul class="nav">
+						<li><a href="myInformation.html">我的个人资料</a><em></em></li>
+						<li><a href="orderManagement.html">订单管理</a><em></em></li>
+						<li  class="active"><a href="myQuestionnaire.html">我的问卷</a><em></em></li>
+						<li><a href="myPayment.html">我的支付</a><em></em></li>
+					</ul>
+					<div class="order">
+						<div class="clearfix management">
+							<h5>我的问卷</h5>
+						</div>
+						<ul class="myQuestionnaire">
+							<li class="clearfix">
+								<p class="l">创建时间：2014.09.28  19:46</p>
+								<a href="" class="r">查看详情</a>
+							</li>
+							<li class="clearfix">
+								<p class="l">创建时间：2014.09.28  19:46</p>
+								<a href="" class="r">查看详情</a>
+							</li>
+							<li class="clearfix">
+								<p class="l">创建时间：2014.09.28  19:46</p>
+								<a href="" class="r">查看详情</a>
+							</li>
+							<li class="clearfix">
+								<p class="l">创建时间：2014.09.28  19:46</p>
+								<a href="" class="r">查看详情</a>
+							</li>
+							<li class="clearfix">
+								<p class="l">创建时间：2014.09.28  19:46</p>
+								<a href="" class="r">查看详情</a>
+							</li>
+							<li class="clearfix">
+								<p class="l">创建时间：2014.09.28  19:46</p>
+								<a href="" class="r">查看详情</a>
+							</li>
+							<li class="clearfix">
+								<p class="l">创建时间：2014.09.28  19:46</p>
+								<a href="" class="r">查看详情</a>
+							</li>
+							<li class="clearfix">
+								<p class="l">创建时间：2014.09.28  19:46</p>
+								<a href="" class="r">查看详情</a>
+							</li>
+							<li class="clearfix">
+								<p class="l">创建时间：2014.09.28  19:46</p>
+								<a href="" class="r">查看详情</a>
+							</li>
+							<li class="clearfix">
+								<p class="l">创建时间：2014.09.28  19:46</p>
+								<a href="questionnaireDetails.html" class="r">查看详情</a>
+							</li>
+						</ul>
+						<div class="tab">
+	                        <ul class="page1">
+	                        	<li class="frist"><span></span><em></em></li>
+	                        	<li class="previousPage"><em></em></li>
+	                        	<li>1</li>
+	                        	<li class="active">2</li>
+	                        	<li>3</li>
+	                        	<li>...</li>
+	                        	<li>10</li>
+	                        	<li class="nextPage"><em></em></li>
+	                        	<li class="last"><em></em><span></span></li>
+	                        </ul>
+                        </div>
+					</div>
+			    </div>
+			</div>
+		</div>
+		<div class="friendlink">
+			<div class="wrap clearfix">
+				<div class="l"></div>
+				<div class="r">
+					<h5>TryBox</h5>
+					<p>
+						<a href="">关于我们</a> |
+						<a href="">常见问题</a> |
+						<a href="">隐私条款及版权声明</a>
+					</p>
+					<p class="siteinfoLegal">Copyright 2014  BICG Fashion Group. All Rights Reserved. 上海ICP备13056226号</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".confirm button").click(function(){
+			window.location.href="selectPrice.html";
+		});
+		$(".my .nav li").hover(function(){
+			$(this).addClass("active").siblings().removeClass("active");
+		})
+		
+	    $(".order .navigation li").click(function(){
+	    	var index = $(this).index();
+	    	$(this).addClass("active").siblings().removeClass("active");
+	    	$(this).parent(".navigation").siblings(".tab").eq(index).css("display","block").siblings(".tab").css("display","none");
+	    })
+	});
+	</script>
+</html>

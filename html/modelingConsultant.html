@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>仿TryBox</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="topNav" id="top">
+        <div class="wrap clearfix">
+            <div class="l">
+            </div>
+            <div class="r">
+                <div class="register">
+                    <a href="signIn.html">登录</a> |
+                    <a href="signIn.html">注册</a>
+                </div>
+                <ul class="Nav clearfix">
+                    <li>
+                        <a href="../index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="modelingConsultant.html">服务流程</a>
+                    </li>
+                    <li>
+                        <a href="modelingConsultant.html">专属造型顾问</a>
+                    </li>
+                    <li>
+                        <a href="legalDeclaration.html">关于价格</a>
+                    </li>
+                    <li>
+                        <a href="aboutTrybox.html">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="consultantProfile">
+        <div class="wrap">
+            <h5><a href="">专属造型顾问</a><a href=""><span>/造型顾问简介</span></a></h5>
+            <div class="ProfileBox">
+                <div class="as name">
+                    <div class="pic pic1"></div>
+                    <div class="Profile">
+                        <h2><em></em>&nbsp 关于造型顾问 &nbsp<em></em></h2>
+                        <h6>SD:</h6>
+                        <p>搭配是件很快乐的事情，尔最快乐的事情是我为顾客做的造型得到了认可。</p>
+                    </div>
+                </div>
+                <div class="ad name">
+                    <div class="pic pic2"></div>
+                    <div class="Profile">
+                        <h2><em></em>&nbsp 关于造型顾问 &nbsp<em></em></h2>
+                        <h6>AS:</h6>
+                        <p>搭配是件很快乐的事情，尔最快乐的事情是我为顾客做的造型得到了认可。</p>
+                    </div>
+                </div>
+                <div class="mio avtive name">
+                    <div class="pic pic3"></div>
+                    <div class="Profile">
+                        <h2><em></em>&nbsp 关于造型顾问 &nbsp<em></em></h2>
+                        <h6>Mio:</h6>
+                        <p>搭配是件很快乐的事情，尔最快乐的事情是我为顾客做的造型得到了认可。</p>
+                    </div>
+                </div>
+                <div class="af name">
+                    <div class="pic pic4"></div>
+                    <div class="Profile">
+                        <h2><em></em>&nbsp 关于造型顾问 &nbsp<em></em></h2>
+                        <h6>AF:</h6>
+                        <p>搭配是件很快乐的事情，尔最快乐的事情是我为顾客做的造型得到了认可。</p>
+                    </div>
+                </div>
+                <div class="ag name">
+                    <div class="pic pic5"></div>
+                    <div class="Profile">
+                        <h2><em></em>&nbsp 关于造型顾问 &nbsp<em></em></h2>
+                        <h6>AG:</h6>
+                        <p>搭配是件很快乐的事情，尔最快乐的事情是我为顾客做的造型得到了认可。</p>
+                    </div>
+                </div>
+                <div class="ah name">
+                    <div class="pic pic6"></div>
+                    <div class="Profile">
+                        <h2><em></em>&nbsp 关于造型顾问 &nbsp<em></em></h2>
+                        <h6>AH:</h6>
+                        <p>搭配是件很快乐的事情，尔最快乐的事情是我为顾客做的造型得到了认可。</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="headPortrait clearfix">
+                <li>
+                    <a class="man man1" href="javascript:void(0)"></a>
+                </li>
+                <li>
+                    <a class="man man2" href="javascript:void(0)"></a>
+                </li>
+                <li>
+                    <a class="man man3 active" href="javascript:void(0)"></a>
+                </li>
+                <li>
+                    <a class="man man4" href="javascript:void(0)"></a>
+                </li>
+                <li>
+                    <a class="man man5" href="javascript:void(0)"></a>
+                </li>
+                <li>
+                    <a class="man man6" href="javascript:void(0)"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer introductionFooter">
+        <div class="wrap">
+            <div>
+                <h2>造型顾问简介</h2>
+                <a href="style.html" class="more">开始体验&nbsp<em></em></a>
+            </div>
+            <p class="communication">分享到:<span class="weiBo"></span><span class="weiXin"></span><span class="ios"></span><span class="android"></span></p>
+        </div>
+        <a href="#top" class="recur"></a>
+    </div>
+    <div class="friendlink">
+        <div class="wrap clearfix">
+            <div class="l"></div>
+            <div class="r">
+                <h5>TryBox</h5>
+                <p>
+                    <a href="">关于我们</a> |
+                    <a href="">常见问题</a> |
+                    <a href="">隐私条款及版权声明</a>
+                </p>
+                <p class="siteinfoLegal">Copyright 2014 BICG Fashion Group. All Rights Reserved. 上海ICP备13056226号</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".headPortrait li a").click(function() {
+            var index = $(this).parent().index();
+            $(this).addClass("active").parent().siblings().find("a").removeClass("active");
+            $(".name").eq(index).show().siblings().hide();
+        });
+    });
+    </script>
+</body>
+
+</html>

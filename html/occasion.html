@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>仿TryBox</title>
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
+		<div class="topNav" id="top">
+			<div class="wrap clearfix">
+				<div class="l">
+				</div>
+				<div class="r">
+					<p class="account">欢迎您：alexanderson&nbsp <a>我的账户<em></em></a></p>
+					<ul class="Nav clearfix">
+						<li>
+							<a href="../index.html">首页</a>
+						</li>
+						<li>
+							<a href="modelingConsultant.html">服务流程</a>
+						</li>
+						<li>
+							<a href="modelingConsultant.html">专属造型顾问</a>
+						</li>
+						<li>
+							<a href="legalDeclaration.html">关于价格</a>
+						</li>
+						<li>
+							<a href="aboutTrybox.html">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="registerPage occasion">
+			<div class="progressBar">
+				<span class="progress6">48%</span>
+			</div>
+			<div class="wrap">
+				<h5><a href="">专属造型顾问</a><a href=""><span>/选择喜欢的色系</span></a></h5>
+				<div class="clearfix registrationForm">
+					<div class="explain">
+						<h6>您想要出席什么场合的服装？</h6>
+						<p>选择您出席场合需要穿的衣服</p>
+					</div>
+                    <ul class="clearfix code">
+                    	<li>
+                    		<div class="clearfix content weiXin">
+                    			<div class="text ">
+		                    		<h6>微信账号：</h6>
+		                    		<p>适盒TryBox</p>
+	                    		</div>
+                                <img src="../img/weiXin.png">
+                    		</div>
+                    	</li>
+                    	<li>
+                    		<div  class="content tell">
+	                    		<h6>电话号码</h6>
+	                    		<span>400-807-0370</span>
+	                    		<p>邮箱：trybox@mail.com</p>
+                    		</div>
+                    	</li>
+                    </ul>
+				</div>
+				<div class="scene personalInformation">
+					<div class="box">
+						<img class="gray" src="../img/occasion1.png">
+						<div class="text">
+							<p>面试</p>
+							<a href="questionnaire.html">VIEW MORE</a>
+						</div>
+					</div>
+					<div class="box">
+						<img class="gray" src="../img/occasion2.png">
+						<div class="text">
+							<p>商务洽谈</p>
+							<a href="questionnaire.html">VIEW MORE</a>
+						</div>
+					</div>
+					<div class="box">
+						<img class="gray" src="../img/occasion3.png">
+						<div class="text">
+							<p>社交酒会</p>
+							<a href="questionnaire.html">VIEW MORE</a>
+						</div>
+					</div>
+					<div class="box">
+						<img class="gray" src="../img/occasion4.png">
+						<div class="text">
+							<p>约会</p>
+							<a href="questionnaire.html">VIEW MORE</a>
+						</div>
+					</div>
+					<div class="box">
+						<img class="gray" src="../img/occasion5.png">
+						<div class="text">
+							<p>休闲度假</p>
+							<a href="questionnaire.html">VIEW MORE</a>
+						</div>
+					</div>
+					<div class="box">
+						<img class="gray" src="../img/occasion6.png">
+						<div class="text">
+							<p>夜生活</p>
+							<a href="questionnaire.html">VIEW MORE</a>
+						</div>
+					</div>
+					<div class="other clearfix">
+						<p>其他场合</p>
+						<div class="select">
+							<div><input placeholder="户外运动" type="text"><em></em></div>
+							<ul class="dialogMain">
+								<li>室内</li>
+								<li>散步</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="friendlink">
+			<div class="wrap clearfix">
+				<div class="l"></div>
+				<div class="r">
+					<h5>TryBox</h5>
+					<p>
+						<a href="">关于我们</a> |
+						<a href="">常见问题</a> |
+						<a href="">隐私条款及版权声明</a>
+					</p>
+					<p class="siteinfoLegal">Copyright 2014  BICG Fashion Group. All Rights Reserved. 上海ICP备13056226号</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".text a").hover(function(){
+			var index = $(this).parents(".box").index();
+			$(this).css("background","#315d88");
+			$(this).parent().siblings().removeClass("gray");
+		},function(){
+			$(this).css("background","");
+			$(this).parent().siblings().addClass("gray");
+		});
+		$(".select").hover(function(){
+			$(this).find(".dialogMain").show();
+		},function(){
+			$(this).find(".dialogMain").hide();
+		});
+		$(".dialogMain li").mousedown(function(){
+			var text = $(this).text();
+			var input = $(this).parent().siblings().find("input");
+			input.val(text);
+			if(input.val() !== ""){
+				window.location.href="questionnaire.html";
+			};
+		});
+		// $(".other select").change(function(){
+		// 	window.location.href="questionnaire.html"
+		// });
+	});
+	</script>
+</html

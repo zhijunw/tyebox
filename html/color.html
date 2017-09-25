@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>仿TryBox</title>
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
+		<div class="topNav" id="top">
+			<div class="wrap clearfix">
+				<div class="l">
+				</div>
+				<div class="r">
+					<div class="register">
+						<a href="">登录</a> |
+						<a href="">注册</a>
+					</div>
+					<ul class="Nav clearfix">
+					<li>
+							<a href="../index.html">首页</a>
+						</li>
+						<li>
+							<a href="modelingConsultant.html">服务流程</a>
+						</li>
+						<li>
+							<a href="modelingConsultant.html">专属造型顾问</a>
+						</li>
+						<li>
+							<a href="legalDeclaration.html">关于价格</a>
+						</li>
+						<li>
+							<a href="aboutTrybox.html">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="clothesStyle">
+			<div class="progressBar">
+				<span class="progress2">24%</span>
+			</div>
+			<div class="wrap">
+				<h5><a href="">专属造型顾问</a><a href=""><span>/选择喜欢的色系</span></a></h5>
+				<ul class="clearfix color">
+					<h3>您平时偏好那种色系？</h3>
+					<a href="registerPage.html">
+						<li calss="box1 clearfix">
+							<div class="black sideways"></div>
+							<div class="lightGray end"></div>
+							<div class="white end"></div>
+							<div class="gray end"></div>
+							<p>基本色</p>
+						</li>
+					</a>
+					<a class="active" href="registerPage.html">
+						<li calss="box2 clearfix">
+							<div class="brown sideways"></div>
+							<div class="green end"></div>
+							<div class="deepYellow end"></div>
+							<div class="deepBlue end"></div>
+							<p>深色系</p>
+						</li>
+					</a>
+					<a href="registerPage.html">
+						<li calss="box3 clearfix">
+							<div class="red sideways"></div>
+							<div class="blue end"></div>
+							<div class="yellow end"></div>
+							<div class="lightBlue end"></div>
+							<p>亮色系</p>
+						</li>
+					</a>
+				</ul>
+			</div>
+			<div class="return">
+				<a href="dressingStyle.html"></a>
+				<p>返回</p>
+			</div>
+		</div>
+		<div class="friendlink">
+			<div class="wrap clearfix">
+				<div class="l"></div>
+				<div class="r">
+					<h5>TryBox</h5>
+					<p>
+						<a href="">关于我们</a> |
+						<a href="">常见问题</a> |
+						<a href="">隐私条款及版权声明</a>
+					</p>
+					<p class="siteinfoLegal">Copyright 2014  BICG Fashion Group. All Rights Reserved. 上海ICP备13056226号</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(".color a").hover(function(){
+		$(this).addClass("active").siblings().removeClass("active");
+	});
+	</script>
+</html>
